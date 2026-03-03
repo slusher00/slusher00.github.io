@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT2P095X62"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JT2P095X62');
+    </script>
+
+    <title>CSR Policy – SWG Interactive Private Limited</title>
+    <meta name="description"
+        content="Corporate Social Responsibility Policy of SWG Interactive Private Limited. Our commitment to ethical, responsible, and sustainable business conduct under the Companies Act, 2013.">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <style>
+        /* ── CSR page-specific styles ── */
+
+        #csrHero {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.72),
+                    rgba(0, 0, 0, 0.95)),
+                url(assets/images/heroes/1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 1px solid var(--highlight);
+            padding: 80px 0 0;
+        }
+
+        #csrHeroInner {
+            display: block;
+            margin: auto;
+            max-width: 1100px;
+            padding: 60px 50px 70px;
+            text-align: center;
+        }
+
+        #csrHeroInner .csrTag {
+            display: inline-block;
+            background-color: var(--highlight);
+            color: var(--dark-text);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 30px;
+            margin-bottom: 24px;
+        }
+
+        #csrHeroInner h1 {
+            color: var(--white);
+            font-weight: 900;
+            font-size: 52px;
+            margin: 0 0 20px;
+            line-height: 1.1;
+        }
+
+        #csrHeroInner .heroSubtitle {
+            color: var(--light-text);
+            font-size: 18px;
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* content body */
+        #csrBody {
+            background-color: var(--dark-background);
+        }
+
+        .csrContent {
+            display: block;
+            margin: auto;
+            max-width: 860px;
+            padding: 70px 50px 80px;
+        }
+
+        /* section cards */
+        .csrSection {
+            background-color: #111315;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 36px 40px;
+            margin-bottom: 28px;
+            position: relative;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .csrSection:hover {
+            border-color: rgba(22, 255, 199, 0.35);
+            box-shadow: 0 0 28px rgba(22, 255, 199, 0.07);
+        }
+
+        .csrSection .csrIconRow {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .csrSection .csrIconBadge {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background-color: rgba(22, 255, 199, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .csrSection .csrIconBadge i {
+            color: var(--highlight);
+            font-size: 18px;
+        }
+
+        .csrSection h2 {
+            color: var(--white);
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .csrSection p {
+            color: var(--light-text);
+            line-height: 1.8;
+            margin: 0;
+            font-size: 15.5px;
+        }
+
+        /* divider between paired paragraphs */
+        .csrSection p+p {
+            margin-top: 14px;
+        }
+
+        /* accent line on left of card */
+        .csrSection::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--highlight), transparent);
+            border-radius: 0 3px 3px 0;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+
+        .csrSection:hover::before {
+            opacity: 1;
+        }
+
+        /* back link */
+        .backLink {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--highlight);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 40px;
+            transition: opacity 0.2s ease;
+        }
+
+        .backLink:hover {
+            opacity: 0.75;
+        }
+
+        /* responsive */
+        @media only screen and (max-width: 700px) {
+            #csrHeroInner h1 {
+                font-size: 36px;
+            }
+
+            #csrHeroInner {
+                padding: 40px 24px 50px;
+            }
+
+            .csrContent {
+                padding: 50px 20px 60px;
+            }
+
+            .csrSection {
+                padding: 28px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <div id="headerClamp">
+            <div class="floatLeft">
+                <a id="headerLogoLink" href="./index.html">
+                    <img class="headerLogo" id="headerLogoBase" src="./assets/images/logo.png">
+                    <img class="headerLogo" id="headerLogoHighlight" src="./assets/images/logo-highlight.png">
+                    <p id="headerTitle">small world<br />games</p>
+                </a>
+            </div>
+            <div class="floatRight" id="headerNav">
+                <a class="headerNavLink" href="./index.html" style="text-decoration:none">Home</a>
+            </div>
+            <p id="hamburgerMenuButton" class="floatRight"><i class="fa-solid fa-bars"></i></p>
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+    <div id="mobileHeaderNav">
+        <a class="headerNavLink" href="./index.html" style="text-decoration:none;display:block">Home</a>
+    </div>
+    <div id="headerDummy"></div>
+
+    <!-- hero -->
+    <div id="csrHero">
+        <div id="csrHeroInner">
+            <span class="csrTag">Corporate Social Responsibility</span>
+            <h1>Our <span class="highlight">Commitment</span></h1>
+            <p class="heroSubtitle">SWG Interactive Private Limited is committed to conducting business in a
+                responsible, ethical, and sustainable manner. The Company recognizes its role in contributing to social
+                development and creating long-term value for society alongside business growth.
+            </p>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div id="csrBody">
+        <div class="csrContent">
+            <a class="backLink" href="./index.html">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+
+            <!-- Legal Framework -->
+            <div class="csrSection">
+                <div class="csrIconRow">
+                    <div class="csrIconBadge"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h2>Legal Framework</h2>
+                </div>
+                <p>The Company's CSR Policy is formulated in accordance with <span class="bold highlight">Section 135 of
+                        the Companies Act, 2013</span> and the Companies (Corporate Social Responsibility Policy) Rules,
+                    2014.</p>
+                <p>The Policy is approved by the Board of Directors and is reviewed periodically to ensure compliance
+                    with applicable laws and evolving societal needs.</p>
+            </div>
+
+            <!-- Focus Areas -->
+            <div class="csrSection">
+                <div class="csrIconRow">
+                    <div class="csrIconBadge"><i class="fa-solid fa-bullseye"></i></div>
+                    <h2>Focus Areas</h2>
+                </div>
+                <p>The Company undertakes CSR initiatives in areas specified under <span class="bold highlight">Schedule
+                        VII of the Act</span>, which include education, healthcare, environmental sustainability, rural
+                    development, community welfare, and other socially beneficial activities.</p>
+                <p>Preference is given to projects in and around the areas where the Company operates, while also
+                    supporting initiatives that create impact at a broader level.</p>
+            </div>
+
+            <!-- CSR Governance -->
+            <div class="csrSection">
+                <div class="csrIconRow">
+                    <div class="csrIconBadge"><i class="fa-solid fa-sitemap"></i></div>
+                    <h2>CSR Governance</h2>
+                </div>
+                <p>A duly constituted <span class="bold highlight">CSR Committee of the Board</span> oversees the
+                    implementation and monitoring of CSR activities. The Committee formulates recommendations, evaluates
+                    projects, and ensures effective utilization of CSR funds in a transparent manner.</p>
+            </div>
+
+            <!-- CSR Implementation -->
+            <div class="csrSection">
+                <div class="csrIconRow">
+                    <div class="csrIconBadge"><i class="fa-solid fa-gears"></i></div>
+                    <h2>CSR Implementation</h2>
+                </div>
+                <p>CSR initiatives may be implemented <span class="bold highlight">directly by the Company</span> or
+                    through eligible registered trusts, societies, Section 8 companies, or other approved implementing
+                    agencies, in accordance with applicable regulations.</p>
+            </div>
+
+            <!-- Transparency & Reporting -->
+            <div class="csrSection">
+                <div class="csrIconRow">
+                    <div class="csrIconBadge"><i class="fa-solid fa-file-lines"></i></div>
+                    <h2>Transparency &amp; Reporting</h2>
+                </div>
+                <p>The Company maintains a <span class="bold highlight">transparent monitoring mechanism</span> for all
+                    CSR projects. Details of CSR activities undertaken, expenditure incurred, and outcomes achieved are
+                    reported annually as part of the Board's Report.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="footerClamp">
+            <div id="footerLeft">
+                <p>
+                    <a href="https://in.linkedin.com/company/small-world-games" target="_blank"><i
+                            class="footerIcon fa-fw fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/SmallWorldGG" target="_blank"><i
+                            class="footerIcon fa-fw fa-brands fa-twitter"></i></a>
+                </p>
+            </div>
+            <div id="footerRight">
+                <p>&copy; 2024 SWG Interactive Pvt Ltd.</p>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // logo highlight
+        $('#headerLogoLink').mouseenter(function () {
+            $('#headerLogoBase').hide();
+            $('#headerLogoHighlight').show();
+        });
+        $('#headerLogoLink').mouseleave(function () {
+            $('#headerLogoBase').show();
+            $('#headerLogoHighlight').hide();
+        });
+
+        // mobile hamburger menu
+        $('#hamburgerMenuButton').click(function () {
+            $('#mobileHeaderNav').slideToggle(150);
+        });
+    </script>
+</body>
+
+</html>

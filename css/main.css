@@ -1,0 +1,645 @@
+/* variables */
+
+:root {
+    --white: #fff;
+    --highlight: rgb(22, 255, 199);
+    --dark-background: rgb(11, 12, 13);
+    --dark-text: rgb(11, 12, 13);
+    --light-text: rgb(210, 210, 210);
+    --border: #242424;
+
+    --edge-radius: 10px;
+}
+
+/* global */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--dark-background);
+    font-family: "Inter", sans-serif;
+}
+
+/* shared */
+
+.bold {
+    font-weight: 650;
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.heroBackground {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid var(--highlight);
+}
+
+.actionButton {
+    display: block;
+    margin: auto;
+    width: 225px;
+    text-align: center;
+    background-color: var(--highlight);
+    color: var(--dark-text);
+    font-weight: 600;
+    font-size: 24px;
+    padding: 15px 0px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: var(--edge-radius);
+}
+
+.actionButton:hover {
+    background-color: var(--white);
+}
+
+.contentSection {
+    display: block;
+    margin: auto;
+    padding: 50px 50px;
+    max-width: 1100px;
+}
+
+.contentTitle {
+    color: var(--white);
+    font-weight: 900;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.contentSubTitle {
+    color: var(--light-text);
+    font-size: 32px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.paragraph {
+    line-height: 28px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+
+.statsHighlight {
+    font-weight: 900;
+}
+
+.rainbowTextAnimated1 {
+    background: linear-gradient(to right, #72ff00, rgb(22, 255, 199));
+    /* background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.rainbowTextAnimated2 {
+    background: linear-gradient(to left, #72ff00, rgb(22, 255, 199));
+    /* background: linear-gradient(to left, #00ff00, #0099ff, #ff3399, #6666ff, #6666ff); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.backgroundGlow {
+    box-shadow: var(--highlight) 0 0 90px 33px;
+}
+
+/* header */
+
+#header {
+    background-color: rgba(11, 12, 13, .5);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 80px;
+    width: calc(100% - 100px);
+    padding: 0px 50px;
+    line-height: 80px;
+    /* border-bottom: 1px solid var(--highlight); */
+    z-index: 999;
+}
+
+#headerClamp {
+    display: block;
+    margin: auto;
+    max-width: 1100px;
+}
+
+#headerLogoLink {
+    text-decoration: none !important;
+}
+
+.headerLogo {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+}
+
+#headerLogoHighlight {
+    display: none;
+}
+
+#headerTitle {
+    color: var(--white);
+    font-size: 24px;
+    font-family: "Fredoka", sans-serif;
+    line-height: 20px !important;
+    position: relative;
+    top: -7px;
+    margin-left: 50px;
+}
+
+#headerNav .headerNavLink {
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--highlight);
+}
+
+#headerNav .headerNavLink:hover {
+    text-decoration-line: underline;
+}
+
+#headerDummy {
+    height: 80px;
+}
+
+#hamburgerMenuButton {
+    display: none;
+    color: var(--white);
+    margin: 0px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#mobileHeaderNav {
+    background-color: rgba(11, 12, 13, .5);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    display: none;
+    width: 100%;
+    z-index: 999;
+}
+
+#mobileHeaderNav .headerNavLink {
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    line-height: 32px;
+    padding: 10px 50px;
+}
+
+#mobileHeaderNav .headerNavLink {
+    border-bottom: 1px solid var(--border);
+}
+
+#mobileHeaderNav .headerNavLink:first-child {
+    border-top: 1px solid var(--border);
+}
+
+/* about */
+
+#aboutSectionContainer p {
+    color: var(--light-text);
+}
+
+/* games */
+
+#hiddenGamesContainer {
+    display: none;
+}
+
+#showAllGamesButton {
+    display: block;
+    margin: auto;
+    width: 150px;
+    text-align: center;
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 0px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: var(--edge-radius);
+}
+
+#showAllGamesButton:hover {
+    background-color: var(--white);
+    color: var(--dark-text)
+}
+
+.gameCapsulesContainer {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+}
+
+.gameCapsule {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    background-color: var(--dark-text);
+    border: 1px solid var(--border);
+    overflow: visible;
+    position: relative;
+    margin-top: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom-left-radius: var(--edge-radius);
+    border-bottom-right-radius: var(--edge-radius);
+}
+
+.gameCapsuleLeft {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: 1px solid var(--border);
+    border-bottom-left-radius: var(--edge-radius);
+}
+
+.gameCapsuleRight {
+    float: right;
+    width: 130px;
+}
+
+.gameCapsuleTitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--border);
+    width: 260px;
+    padding: 10px 20px;
+    position: absolute;
+    top: -50px;
+    left: -1px;
+    border-top-left-radius: var(--edge-radius);
+    border-top-right-radius: var(--edge-radius);
+    /* -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75); */
+}
+
+.gameCapsuleBubble {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-text);
+    text-align: center;
+    background-color: var(--highlight);
+    width: 113px;
+    padding: 5px 15px;
+    position: absolute;
+    top: -77px;
+    left: 148px;
+    border-top-left-radius: var(--edge-radius);
+    border-top-right-radius: var(--edge-radius);
+}
+
+.gameCapsuleStat {
+    margin: 16px 0px;
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+#animeDefendersImg {
+    background-image: url(../assets/images/capsules/anime-defenders.webp);
+}
+
+#deathBallImg {
+    background-image: url(../assets/images/capsules/death-ball.webp);
+}
+
+#hamiltonImg {
+    background-image: url(../assets/images/capsules/hamilton.webp);
+}
+
+#abxImg {
+    background-image: url(../assets/images/capsules/abx.webp);
+}
+
+#rideACartImg {
+    background-image: url(../assets/images/capsules/ride-a-cart.webp);
+}
+
+#speedDuelsImg {
+    background-image: url(../assets/images/capsules/speed-duels.webp);
+}
+
+#pressureWash2Img {
+    background-image: url(../assets/images/capsules/pressure-wash-2.webp);
+}
+
+#powerWashImg {
+    background-image: url(../assets/images/capsules/power-wash.webp);
+}
+
+#beASpiderImg {
+    background-image: url(../assets/images/capsules/be-a-spider.webp);
+}
+
+#jerryImg {
+    background-image: url(../assets/images/capsules/jerry.webp);
+}
+
+#superheroImg {
+    background-image: url(../assets/images/capsules/superhero.webp);
+}
+
+/* brands */
+
+#brandsTitle {
+    margin-bottom: 35px;
+}
+
+#brandsImg {
+    float: left;
+    width: calc(50% - 10px);
+    border-radius: var(--edge-radius);
+    border: 1px solid var(--border);
+}
+
+#brandsText {
+    float: right;
+    width: calc(50% - 10px);
+    margin-top: -24px;
+}
+
+#brandsText p {
+    color: var(--light-text);
+}
+
+/* join */
+
+#openPositionsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+}
+
+.openPosition {
+    width: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.openPositionIcon {
+    color: var(--white);
+    font-size: 56px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.openPositionTitle {
+    color: var(--highlight);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.openPositionInfo {
+    color: var(--light-text);
+    margin-top: -10px;
+}
+
+/* contact */
+
+#contactSectionContainer {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.85)),
+        url(../assets/images/heroes/3.png);
+}
+
+#joinSection {
+    border-bottom: none;
+}
+
+#contactForm {
+    text-align: center;
+    max-width: 550px;
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 0px;
+}
+
+#contactForm input[type=text],
+#contactForm textarea {
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+/* footer */
+
+#footer {
+    height: 70px;
+    line-height: 70px;
+    padding: 0px 50px;
+    border-top: 1px solid var(--highlight);
+    color: var(--light-text);
+    font-size: 14px;
+    position: relative;
+}
+
+#footer a {
+    color: var(--light-text) !important;
+    text-decoration: none !important;
+}
+
+#footerClamp {
+    display: block;
+    margin: auto;
+    max-width: 1100px;
+}
+
+#footerLeft {
+    float: left;
+}
+
+#footerCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 70px;
+}
+
+#csrPolicyLink {
+    color: var(--light-text) !important;
+    text-decoration: none !important;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+#csrPolicyLink:hover {
+    color: var(--highlight) !important;
+}
+
+.footerIcon {
+    margin: 0px 10px;
+    font-size: 18px;
+}
+
+#footerRight {
+    float: right;
+}
+
+/* background images */
+
+#aboutSectionContainer {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 1)),
+        url(../assets/images/heroes/1.png);
+}
+
+#gamesSectionContainer {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.75)),
+        url(../assets/images/heroes/2.png);
+}
+
+#brandsSectionContainer {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 1)),
+        url(../assets/images/heroes/3.png);
+}
+
+#joinSectionContainer {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.65)),
+        url(../assets/images/heroes/4.png);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 850px) {
+    #headerNav {
+        display: none;
+    }
+
+    #hamburgerMenuButton {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+
+    #brandsImg,
+    #brandsText {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    #brandsImg {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #footer {
+        height: auto;
+    }
+
+    #footerLeft,
+    #footerCenter,
+    #footerRight {
+        float: none;
+        text-align: center;
+        line-height: 20px !important;
+    }
+
+    #footerCenter {
+        position: static;
+        transform: none;
+        padding: 8px 0;
+    }
+
+    #footerRight {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #gamesSection,
+    #joinSection {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #headerTitle {
+        display: none;
+    }
+}
